@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    
+  <title>Facebook Style 3 Column Layout</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Make left & right sidebars fixed and scrollable */
+     .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding-bottom: 20px;
+      
+    } 
+
+    /* Middle column = normal scroll */
+    .feed {
+      padding: 20px 10px;
+    }
+
+    /* Hide default scrollbar (optional) */
+    .sidebar::-webkit-scrollbar {
+      width: 5px;
+      
+    }
+
+    .sidebar::-webkit-scrollbar-thumb {
+      background: #161515;
+      border-radius: 10px;
+    }
+
+    body {
+      background: #000;
+    }
+
+    .card {
+      margin-bottom: 20px;
+      color: white;
+      background-color: #000;
+    
+    }
+    .sidebar > h5{
+      color: white;
+      font-size: 50px;
+      font-family: "Brush Script MT", cursive;
+    }
+    .sidebar > p{
+      color: white;
+      font-size: 22px;
+      
+    }
+    .feed > h3{
+      color: white;
+      
+    }
+    .feed{
+      padding-left:290px ;
+      padding-right:290px ;
+       }
+    .glyphicon{
+      color: white;
+    }
+    .search{
+     color: white;
+    }
+    .imgjaseer{
+      width: 30px;
+      border-radius:30px;
+    }
+    i{
+      padding-right: 15px;
+    }
+    
+    .profile{
+      margin-right:  15px;
+    }
+    .postvideo{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+     .post > h5 > img{
+      width: 35px;
+      border-radius: 30px;
+    }
+  .post >h5 > i{
+      color: blue;
+      font-size: 18px;
+    }
+    .postimage{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  .instastory{
+   display: flex;
+}
+.instastory > .image > img{
+  height: 85px;
+  border-radius: 45px;
+  border: 4px solid rgb(221, 19, 187);
+  margin-left: 9px;
+}
+.instastory > .image > h3{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+}
+.like{
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+.Message{
+   font-size: 25px;
+  color: white;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+.comment{
+
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+.card > .card-body > i:hover{
+color: red;
+cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+.feed{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+}
+@media only screen and (min-width: 992px) {
+  .feed{
+    padding-left:290px ;
+      padding-right:290px ;
+      
+  }
+}
+.a{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.dot > h6{
+  font-size: 25px;
+  padding: 5px;
+  margin-top: -15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="col-md-2  col-lg-2 d-none d-md-block">
+      <div class="sidebar p-3 ">
+        <h5 class="mb-3 mt-4">Instagram</h5>
+        <br>
+        <p> 
+<i class="fas fa-home "></i> Home</p><br>
+        <p>
+<i class="fa fa-search search"></i> Search</p><br>
+        <p> <i class='far fa-compass'></i>
+ Explore</p><br>
+        <p><i class="fas fa-toggle-right"></i>
+ Reels</p><br>
+        <p><i class='fas fa-paper-plane'></i>
+ Messages</p><br>
+        <p> <i class='far fa-heart'></i>
+ Notifications</p><br>
+        <p> <i class="fas fa-plus"></i> Create</p><br>
+        <p><img src="/img/jaseer.jpg" class="imgjaseer"><span class="profile"> Profile</span></p>
+        <br><br><br><br><br><br>
+        <p><i class="fa fa-bars"></i> More</p><br>
+        <p><i class="fa fa-th-large"></i> Also from meta</p>
+        
+      </div>
+    </div>
+
+    <!-- CENTER FEED -->
+     
+    <div class="col-md-8 col-lg-8 col-sm-12 feed ">
+      <div class="mb-4 instastory">
+        <div class="image">
+        <img src="/img/mjpt.jpg">
+        <h3>m__j_pt</h3>
+        </div>
+        <div class="image">
+        <img src="/img/ajsal.jpg">
+        <h3>ajsal.05</h3>
+        </div>
+        <div class="image">
+        <img src="/img/murshid.jpg">
+        <h3>_murshid...</h3>
+        </div>
+        <div class="image">
+        <img src="/img/muhsi.jpg">
+        <h3>3_xhi_i_</h3>
+        </div>
+        <div class="image">
+        <img src="/img/miluleo.jpg">
+        <h3>millu_leo</h3>
+        </div>
+      </div>
+
+      <!-- Sample posts -->
+      <div class="card">
+        <div class="card-body" >
+          
+          <div class="a">
+          <div class="post">
+            
+          <h5><img src="/img/post1 image.jpg">  mathrubhumidotcom  <i class="fas fa-check-circle"></i> </h5>
+          </div>
+          <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+          </div>
+          <img src="/img/post1.jpg" class="img-fluid postimage" alt="image">
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+  
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post2 image.jpg">  Sam_leo.x_.10 </h5>
+          </div>
+<div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+          </div>
+         
+          <video class="postvideo" controls>
+            <source src="/img/post2.mp4" type="video/mp4">
+          </video>
+        
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post3 image.jpg">  rajishavijayan  <i class="fas fa-check-circle"></i></h5>
+          </div>
+
+      <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+</div>
+
+          <img src="/img/post3.jpg" class="img-fluid postimage" alt="image">
+          
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+
+      <!-- Add many more posts to show scrolling -->
+      <div class="card">
+        <div class="card-body">
+
+          <div class="a">
+
+            <div class="post">
+          <h5><img src="/img/post4 image.jpg">  thengakolamedia  <i class="fas fa-check-circle"></i></h5>
+         </div>
+        
+       <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+        
+        </div>
+          
+          
+          <video class="postvideo" controls>
+            <source src="/img/post4.mp4" type="video/mp4">
+          </video>
+            <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+          
+        </div>
+      </div>
+    
+
+     <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post5 image.jpg">  nocap.online  <i class="fas fa-check-circle"></i></h5>
+          </div>
+          <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+          </div>
+          
+          <img src="/img/post5.jpg" class="img-fluid postimage" alt="image">
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+    
+
+     <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post1 image.jpg">  mathrubhumidotcom  <i class="fas fa-check-circle"></i></h5>
+          </div>
+         <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+        
+        </div>
+          
+          <video class="postvideo" controls>
+            <source src="/img/post6.mp4" type="video/mp4">
+            </video>
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+    
+       <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post7 image.jpg">  sunmusic_offl   <i class="fas fa-check-circle"></i></h5>
+         </div>
+        
+        <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+        
+        </div>
+         
+          <video class="postvideo" controls>
+            <source src="/img/post7.mp4" type="video/mp4"></video>
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+    
+       <div class="card">
+
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post8 image.jpg">  trollmovies  <i class="fas fa-check-circle"></i></h5>
+          </div> 
+          <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+          </div>
+          <img src="/img/post8.jpg" class="img-fluid postimage" alt="image">
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+    
+       <div class="card">
+        <div class="card-body">
+
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post9 image.jpg">  juventus  <i class="fas fa-check-circle"></i></h5>
+          </div>
+          <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+        
+        
+        </div>
+          <video class="postvideo" controls>
+            <source src="/img/post9.mp4" type="video/mp4"></video>
+          <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+        </div>
+      </div>
+    
+       <div class="card">
+        <div class="card-body">
+          <div class="a">
+            <div class="post">
+          <h5><img src="/img/post8 image.jpg">  trollmovies  <i class="fas fa-check-circle"></i></h5>
+           </div>
+          <div class="dot">
+          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+          </div>
+           </div>
+          <img src="/img/post10.jpg" class="img-fluid postimage" alt="image">
+        <i class='far fa-heart like'></i>
+          <i class='far fa-comment comment'></i>
+          <i class='fas fa-paper-plane Message'></i>
+          
+          </div>
+      </div>
+    
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="col-md-2 col-lg-2 d-none d-md-block ">
+      <div class="sidebar p-3 border-start">
+        <h5 class="mb-3"></h5>
+        <p>Contacts</p>
+        <p>Contact 1</p>
+        <p>Contact 2</p>
+        <p>Contact 3</p>
+        <p>Contact 4</p>
+        <p>Contact 5</p>
+        <p>Contact 6</p>
+        <p>Contact 7</p>
+        <p>Contact 8</p>
+        <p>Contact 9</p>
+        <p>Contact 10</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
