@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    
+
+
   <title>Facebook Style 3 Column Layout</title>
 
   <!-- Bootstrap 5 -->
@@ -17,14 +18,14 @@
 
   <style>
     /* Make left & right sidebars fixed and scrollable */
-     .sidebar {
+    .sidebar {
       position: sticky;
       top: 0;
       height: 100vh;
       overflow-y: auto;
       padding-bottom: 20px;
-      
-    } 
+
+    }
 
     /* Middle column = normal scroll */
     .feed {
@@ -34,7 +35,7 @@
     /* Hide default scrollbar (optional) */
     .sidebar::-webkit-scrollbar {
       width: 5px;
-      
+
     }
 
     .sidebar::-webkit-scrollbar-thumb {
@@ -50,436 +51,1014 @@
       margin-bottom: 20px;
       color: white;
       background-color: #000;
-    
+
     }
-    .sidebar > h5{
+
+    .sidebar>h5 {
       color: white;
       font-size: 50px;
       font-family: "Brush Script MT", cursive;
     }
-    .sidebar > p{
+
+    .sidebar>p {
       color: white;
-      font-size: 22px;
-      
+      font-size: 18px;
+
     }
-    .feed > h3{
+
+    .feed>h3 {
       color: white;
-      
+
     }
-    .feed{
-      padding-left:290px ;
-      padding-right:290px ;
-       }
-    .glyphicon{
+
+    .feed {
+      padding-left: 290px;
+      padding-right: 290px;
+    }
+
+    .glyphicon {
       color: white;
     }
-    .search{
-     color: white;
+
+    .search {
+      color: white;
     }
-    .imgjaseer{
+
+    .imgjaseer {
       width: 30px;
-      border-radius:30px;
+      border-radius: 30px;
     }
-    i{
+
+    i {
       padding-right: 15px;
     }
-    
-    .profile{
-      margin-right:  15px;
+
+    .profile {
+      margin-right: 15px;
     }
-    .postvideo{
+
+    .postvideo {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-     .post > h5 > img{
+
+    .post>h5>img {
       width: 35px;
       border-radius: 30px;
     }
-  .post >h5 > i{
+
+    .post>h5>i {
       color: blue;
       font-size: 18px;
     }
-    .postimage{
+
+    .postimage {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  .instastory{
-   display: flex;
+
+    .instastory {
+      display: flex;
+    }
+
+    .instastory>.image>img {
+      border: 4px solid rgb(221, 19, 187);
+      margin-left: 9px;
+      cursor: pointer;
+    }
+
+    .instastory>.image>h3 {
+      color: white;
+      font-size: 13px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .like {
+      font-size: 25px;
+      color: white;
+      margin-top: 18px;
+      padding-left: 10px;
+    }
+
+    .Message {
+      font-size: 20px;
+      color: white;
+      margin-top: 18px;
+      padding-left: 3px;
+    }
+
+    .comment {
+
+      font-size: 25px;
+      color: white;
+      margin-top: 18px;
+      padding-left: 3px;
+    }
+
+    .card>.card-body>i:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .feed {
+        padding-left: 4px;
+        padding-right: 4px;
+
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .feed {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+
+
+    @media only screen and (min-width: 992px) {
+      .feed {
+        padding-left: 190px;
+        padding-right: 190px;
+
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .instastory>.image>img {
+        height: 70px;
+        border-radius: 45px;
+        margin-top: 70px;
+
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      .instastory>.image>img {
+        height: 70px;
+        border-radius: 45px;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .instastory>.image>img {
+        height: 90px;
+        border-radius: 45px;
+      }
+    }
+
+    .a {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .dot>h6 {
+      font-size: 25px;
+      padding: 5px;
+      margin-top: -15px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .sideimage {
+      height: 50px;
+      border-radius: 45px;
+      cursor: pointer;
+    }
+
+    .rightside {
+      display: flex;
+
+    }
+
+    .button {
+      color: blue;
+      margin-left: 7.5rem;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .button:hover {
+      text-decoration: underline;
+    }
+
+    .b {
+      display: flex;
+    }
+
+    .rightsidename>h4 {
+      color: white;
+      font-size: 16px;
+      padding-left: 12px;
+    }
+
+    .rightsidename>.subname {
+      color: gray;
+      font-size: 16px;
+    }
+
+    .c {
+      display: flex;
+      margin-top: 12px;
+
+    }
+
+    .c1>h3 {
+      color: white;
+      font-size: 15px;
+    }
+
+    .c2>h3 {
+      color: white;
+      font-size: 15px;
+      margin-left: 7rem;
+      cursor: pointer;
+    }
+
+    .c2>h3:hover {
+      color: gray;
+    }
+
+    .d {
+      margin-top: 10px;
+      display: flex;
+    }
+
+    .d1 {
+      display: flex;
+    }
+
+    .d1name>h4 {
+      color: white;
+      font-size: 16px;
+      margin-left: 1.1rem;
+      margin-top: -2px;
+      cursor: pointer;
+    }
+
+    .d1button {
+      color: blue;
+
+      margin-top: -5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .d1button:hover {
+      text-decoration: underline;
+    }
+
+    .d2name>h4 {
+      color: white;
+      font-size: 17px;
+      margin-left: 1.2rem;
+      margin-top: -2px;
+      cursor: pointer;
+    }
+
+    .d2button {
+      color: blue;
+
+      margin-top: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .d2button:hover {
+      text-decoration: underline;
+    }
+
+    .d1image>p>img {
+      height: 50px;
+    }
+
+    .d3name>h4 {
+      color: white;
+      font-size: 17px;
+      margin-left: 1.1rem;
+      margin-top: -2px;
+      cursor: pointer;
+    }
+
+    .tick {
+      color: blue;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .d3button {
+      color: blue;
+
+      margin-top: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .d3button:hover {
+      text-decoration: underline;
+    }
+
+    .d4name>h4 {
+      color: white;
+      font-size: 15px;
+      margin-left: 1.1rem;
+      margin-top: -8px;
+      cursor: pointer;
+    }
+
+    .d4name>h5 {
+      color: white;
+      font-size: 15px;
+      margin-top: -6px;
+      margin-left: 1.1rem;
+
+      cursor: pointer;
+    }
+
+    .d4button {
+      color: blue;
+
+      margin-top: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .d4button:hover {
+      text-decoration: underline;
+    }
+
+    .e {
+      display: flex;
+      margin-left: 8px;
+    }
+
+    .eimage1>img {
+      height: 25px;
+      border-radius: 45px;
+      cursor: pointer;
+      border: 2px solid rgb(219, 219, 219);
+    }
+
+    .eimage2>img {
+      height: 25px;
+      border-radius: 45px;
+      cursor: pointer;
+      position: absolute;
+      margin-left: -12px;
+      border: 2px solid white;
+    }
+
+    .e>p {
+      color: white;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .maine {
+      display: flex;
+    }
+
+    .epara>p {
+      color: white;
+      font-size: 13px;
+      margin-left: 17px;
+      color: gray;
+    }
+
+   @media only screen and (min-width: 992px) {
+    .navbar{
+      display:none;
+    }
+   }
+   @media only screen and (min-width: 768px) {
+    .navbar{
+      display:none;
+    }
+   }
+.navbar{
+  border: 1px solid  rgba(15, 12, 12, 0.551);;
+ background-color:rgba(0, 0, 0, 0.945); ;
 }
-.instastory > .image > img{
-  height: 85px;
-  border-radius: 45px;
-  border: 4px solid rgb(221, 19, 187);
-  margin-left: 9px;
-}
-.instastory > .image > h3{
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  padding: 5px;
-}
-.like{
-  font-size: 30px;
-  color: white;
-  margin-top: 15px;
-  padding-left: 5px;
-}
-.Message{
-   font-size: 25px;
-  color: white;
-  margin-top: 15px;
-  padding-left: 5px;
-}
-.comment{
-
-  font-size: 30px;
-  color: white;
-  margin-top: 15px;
-  padding-left: 5px;
-}
-.card > .card-body > i:hover{
-color: red;
-cursor: pointer;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .feed{
-  padding-left: 4px;
-  padding-right: 4px;
-
-}}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .feed{
-  padding-left: 4px;
-  padding-right: 4px;
-}}
-
-
-
-@media only screen and (min-width: 992px) {
-  .feed{
-    padding-left:290px ;
-      padding-right:290px ;
+   
+.navinsta > a > h5{
+  font-size: 35px;
+      font-family: "Brush Script MT", cursive;
+      color: white;
       
-  }
 }
-.a{
-  display: flex;
-  justify-content: space-between;
+.navinsta{
+  height: 40px;
+}
+.navsearch{
+  margin-top: -12px;
+  
   
 }
-.dot > h6{
-  font-size: 25px;
-  padding: 5px;
-  margin-top: -15px;
-  border-radius: 15px;
+.navsearchbox{
+  border-radius: 25px;
+  margin-left: 165px;
+  margin-top: -25px;
+  padding-left: 40px;
+background-color: rgba(136, 126, 126, 0.46);
+ cursor: pointer;
+width: 230px;
+border: none;
+
+}
+.navsearchicon{
+  color: gray;
+  position: absolute;
+  margin-left:168px;
+  margin-top: -36px;
+  padding: 15px;
+  font-size: 15px;
+}
+.mainsearch{
+display: flex;
+}
+
+.navlike{
+  color: white;
+  margin-top: -40px;
+  font-size: 28px;
   cursor: pointer;
 }
+
+ @media only screen and (min-width: 992px) {
+    .navbottom{
+      display:none;
+    }
+   }
+@media only screen and (min-width: 768px) {
+    .navbottom{
+      display:none;
+    }
+   }
+   .navbottom{
+    background-color: rgba(62, 57, 57, 0.551);
+ border: 2px solid rgba(30, 27, 27, 0.358);;
+
+   }
+   .subnavbottom{
+    height: 60px;
+    
+   }
+   .bottomhome{
+    margin-left: 18px;
+    color: white;
+   }
+   .bottombutton{
+    color: white;
+   }
   </style>
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <div class="row">
+  <div class="container-fluid">
+    <div class="row">
 
-    <!-- LEFT SIDEBAR -->
-    <div class="col-md-2  col-lg-2 d-none d-md-block">
-      <div class="sidebar p-3 ">
-        <h5 class="mb-3 mt-2">Instagram</h5>
-        <br>
-        <p> 
-<i class="fas fa-home "></i> Home</p><br>
-        <p>
-<i class="fa fa-search search"></i> Search</p><br>
-        <p> <i class='far fa-compass'></i>
- Explore</p><br>
-        <p><i class="fas fa-toggle-right"></i>
- Reels</p><br>
-        <p><i class='fas fa-paper-plane'></i>
- Messages</p><br>
-        <p> <i class='far fa-heart'></i>
- Notifications</p><br>
-        <p> <i class="fas fa-plus"></i> Create</p><br>
-        <p><img src="img/jaseer.jpg" class="imgjaseer"><span class="profile"> Profile</span></p>
-        <br><br><br><br><br><br>
-        <p><i class="fa fa-bars"></i> More</p><br>
-        <p><i class="fa fa-th-large"></i> Also from meta</p>
-        
+      <!-- LEFT SIDEBAR -->
+      <div class="col-md-2  col-lg-2 d-none d-md-block">
+        <div class="sidebar p-3">
+          <h5 class="mb-3 mt-2 ">Instagram</h5>
+
+          <p>
+            <i class="fas fa-home "></i> Home
+          </p>
+          <p>
+            <i class="fa fa-search search"></i> Search
+          </p>
+          <p> <i class='far fa-compass'></i>
+            Explore</p>
+          <p><i class="fas fa-toggle-right"></i>
+            Reels</p>
+          <p><i class='fas fa-paper-plane'></i>
+            Messages</p>
+          <p> <i class='far fa-heart'></i>
+            Notifications</p>
+          <p> <i class="fas fa-plus"></i> Create</p>
+          <p><img src="img/jaseer.jpg" class="imgjaseer"><span class="profile"> Profile</span></p>
+          <br><br><br><br>
+          <p><i class="fa fa-bars"></i> More</p><br>
+          <p><i class="fa fa-th-large"></i> Also from meta</p>
+
+        </div>
       </div>
+
+      <!-- CENTER FEED -->
+
+      <div class="col-md-8 col-lg-7 col-sm-12 feed border-start">
+        <div class="mb-4 instastory">
+          <div class="image">
+            <img src="img/mjpt.jpg">
+            <h3>m__j_pt</h3>
+          </div>
+          <div class="image">
+            <img src="img/ajsal.jpg">
+            <h3>ajsal.05</h3>
+          </div>
+          <div class="image">
+            <img src="img/murshid.jpg">
+            <h3>_murshid...</h3>
+          </div>
+          <div class="image">
+            <img src="img/muhsi.jpg">
+            <h3>3_xhi_i_</h3>
+          </div>
+          <div class="image">
+            <img src="img/miluleo.jpg">
+            <h3>millu_leo</h3>
+          </div>
+        </div>
+
+        <!-- Sample posts -->
+        <div class="card">
+          <div class="card-body">
+
+            <div class="a">
+              <div class="post">
+
+                <h5><img src="img/post1 image.jpg"> mathrubhumidotcom <i class="fas fa-check-circle"></i> </h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+            <img src="img/post1.jpg" class="img-fluid postimage" alt="image">
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post2 image.jpg"> Sam_leo.x_.10 </h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+
+            <video class="postvideo" controls>
+              <source src="img/post2.mp4" type="video/mp4">
+            </video>
+
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post3 image.jpg"> rajishavijayan <i class="fas fa-check-circle"></i></h5>
+              </div>
+
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+
+            <img src="img/post3.jpg" class="img-fluid postimage" alt="image">
+
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <!-- Add many more posts to show scrolling -->
+        <div class="card">
+          <div class="card-body">
+
+            <div class="a">
+
+              <div class="post">
+                <h5><img src="img/post4 image.jpg"> thengakolamedia <i class="fas fa-check-circle"></i></h5>
+              </div>
+
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+
+            </div>
+
+
+            <video class="postvideo" controls>
+              <source src="img/post4.mp4" type="video/mp4">
+            </video>
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post5 image.jpg"> nocap.online <i class="fas fa-check-circle"></i></h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+
+            <img src="img/post5.jpg" class="img-fluid postimage" alt="image">
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post1 image.jpg"> mathrubhumidotcom <i class="fas fa-check-circle"></i></h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+
+            </div>
+
+            <video class="postvideo" controls>
+              <source src="img/post6.mp4" type="video/mp4">
+            </video>
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post7 image.jpg"> sunmusic_offl <i class="fas fa-check-circle"></i></h5>
+              </div>
+
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+
+            </div>
+
+            <video class="postvideo" controls>
+              <source src="img/post7.mp4" type="video/mp4">
+            </video>
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <div class="card">
+
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post8 image.jpg"> trollmovies <i class="fas fa-check-circle"></i></h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+            <img src="img/post8.jpg" class="img-fluid postimage" alt="image">
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post9 image.jpg"> juventus <i class="fas fa-check-circle"></i></h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+
+
+            </div>
+            <video class="postvideo" controls>
+              <source src="img/post9.mp4" type="video/mp4">
+            </video>
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="a">
+              <div class="post">
+                <h5><img src="img/post8 image.jpg"> trollmovies <i class="fas fa-check-circle"></i></h5>
+              </div>
+              <div class="dot">
+                <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
+              </div>
+            </div>
+            <img src="img/post10.jpg" class="img-fluid postimage" alt="image">
+            <i class='far fa-heart like'></i>
+            <i class='far fa-comment comment'></i>
+            <i class='fas fa-paper-plane Message'></i>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="col-md-2 col-lg-3 d-none d-md-block ">
+        <div class="sidebar p-3 mt-4 ">
+          <div class="rightside">
+            <div class="b">
+              <div>
+                <p><img src="img/mjpt.jpg" class="sideimage"></p>
+              </div>
+              <div class="rightsidename">
+                <h4>m__j_pt</h4>
+                <h4 class="subname">Jaseer</h4>
+              </div>
+            </div>
+            <div class="button">
+              <b>Switch</b>
+            </div>
+          </div>
+
+          <div class="c">
+            <div class="c1">
+              <h3>Suggested for you</h3>
+            </div>
+            <div class="c2">
+              <h3>See All</h3>
+            </div>
+          </div>
+
+
+          <div class="d">
+            <div class="d1">
+              <div>
+                <p><img src="img/dimage.jpg" class="sideimage"></p>
+              </div>
+              <div class="d1name">
+                <h4>ad1hhhhhhi</h4>
+                <div class="maine">
+                  <div class="e">
+
+                    <div class="eimage1">
+                      <img src="img/miluleo.jpg">
+                    </div>
+                    <div class="eimage2"><img src="img/muhsi.jpg"></div>
+                  </div>
+
+                  <div class="epara">
+                    <p>Followed by miluleo + </p>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+
+            <div class="d1button">
+              <b>Follow</b>
+            </div>
+          </div>
+
+
+          <div class="d">
+
+            <div class="d1">
+
+              <div class="d1image">
+                <p><img src="img/d2image.jpg" class="sideimage"></p>
+              </div>
+
+              <div class="d2name">
+                <h4>family time</h4>
+
+                <div class="maine">
+                  <div class="e">
+
+                    <div class="eimage1">
+                      <img src="img/buraq.jpg">
+                    </div>
+                    <div class="eimage2"><img src="img/thegakola.jpg"></div>
+                  </div>
+
+                  <div class="epara">
+                    <p>Followed by mburaq + </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="d2button">
+              <b>Follow</b>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="d">
+
+
+            <div class="d1">
+
+              <div>
+                <p><img src="img/d3image.jpg" class="sideimage"></p>
+              </div>
+
+
+              <div class="d3name">
+                <h4>boche <i class="fas fa-check-circle tick"></i></h4>
+                <div class="maine">
+                  <div class="e">
+
+                    <div class="eimage1">
+                      <img src="img/athul.jpg">
+                    </div>
+                    <div class="eimage2"><img src="img/aseeb.jpg"></div>
+                  </div>
+
+                  <div class="epara">
+                    <p>Followed by athul &+1 </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="d3button"><b>Follow</b></div>
+          </div>
+
+
+
+
+          <div class="d">
+
+
+            <div class="d1">
+              <div>
+                <p><img src="img/d4 image.jpg" class="sideimage"></p>
+              </div>
+              <div class="d2name">
+                <h4>Munavviree</h4>
+
+                <div class="maine">
+                  <div class="e">
+
+                    <div class="eimage1">
+                      <img src="img/miluleo.jpg">
+                    </div>
+                    <div class="eimage2"><img src="img/murshid.jpg"></div>
+                  </div>
+
+                  <div class="epara">
+                     <p>Followed by murshid +1</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="d1button"><b>Follow</b></div>
+          </div>
+
+
+          <div class="d">
+            <div class="d1">
+              <div>
+                <p><img src="img/d5image.jpg" class="sideimage"></p>
+              </div>
+
+
+              <div class="d4name">
+                <h4>WIKKY_THE</h4>
+                <h5>കേരളജനക...</h5>
+                <div class="maine">
+                  <div class="e">
+
+                    <div class="eimage1">
+                      <img src="img/buraq.jpg">
+                    </div>
+                    <div class="eimage2"><img src="img/ajsal.jpg"></div>
+                  </div>
+
+                  <div class="epara">
+                    <p>Followed by ajsal &ot +1 </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="d4button"><b>Follow</b></div>
+          </div>
+
+
+
+        </div>
+      </div>
+
     </div>
-
-    <!-- CENTER FEED -->
-     
-    <div class="col-md-8 col-lg-8 col-sm-12 feed ">
-      <div class="mb-4 instastory">
-        <div class="image">
-        <img src="img/mjpt.jpg">
-        <h3>m__j_pt</h3>
-        </div>
-        <div class="image">
-        <img src="img/ajsal.jpg">
-        <h3>ajsal.05</h3>
-        </div>
-        <div class="image">
-        <img src="img/murshid.jpg">
-        <h3>_murshid...</h3>
-        </div>
-        <div class="image">
-        <img src="img/muhsi.jpg">
-        <h3>3_xhi_i_</h3>
-        </div>
-        <div class="image">
-        <img src="img/miluleo.jpg">
-        <h3>millu_leo</h3>
-        </div>
-      </div>
-
-      <!-- Sample posts -->
-      <div class="card">
-        <div class="card-body" >
-          
-          <div class="a">
-          <div class="post">
-            
-          <h5><img src="img/post1 image.jpg">  mathrubhumidotcom  <i class="fas fa-check-circle"></i> </h5>
-          </div>
-          <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-          </div>
-          <img src="img/post1.jpg" class="img-fluid postimage" alt="image">
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
   
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post2 image.jpg">  Sam_leo.x_.10 </h5>
-          </div>
-<div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-          </div>
-         
-          <video class="postvideo" controls>
-            <source src="img/post2.mp4" type="video/mp4">
-          </video>
-        
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post3 image.jpg">  rajishavijayan  <i class="fas fa-check-circle"></i></h5>
-          </div>
-
-      <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
+  <div class="col-sm-12  d-lg-block d-md-block navbar">
+  
+<nav class="navbar navbar-expand-sm  fixed-top">
+ 
+ 
+  <div class="container-fluid navinsta">
+    <a><h5 class="mb-3 ">Instagram</h5></a>
 </div>
 
-          <img src="img/post3.jpg" class="img-fluid postimage" alt="image">
-          
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-
-      <!-- Add many more posts to show scrolling -->
-      <div class="card">
-        <div class="card-body">
-
-          <div class="a">
-
-            <div class="post">
-          <h5><img src="img/post4 image.jpg">  thengakolamedia  <i class="fas fa-check-circle"></i></h5>
-         </div>
+    <div class="container-fluid mainsearch">
+    <i class="fas fa-search navsearchicon "></i>
+      <form class="d-flex navsearch">
+        <input class="form-control  navsearchbox" type="text" placeholder="Search">
         
-       <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-        
-        </div>
-          
-          
-          <video class="postvideo" controls>
-            <source src="img/post4.mp4" type="video/mp4">
-          </video>
-            <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-          
-        </div>
-      </div>
-    
+      </form>
 
-     <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post5 image.jpg">  nocap.online  <i class="fas fa-check-circle"></i></h5>
-          </div>
-          <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-          </div>
-          
-          <img src="img/post5.jpg" class="img-fluid postimage" alt="image">
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-    
+      <span class="navlike" data-bs-toggle="tooltip" title="Notification"><i class='far fa-heart'></i></span>
+  </div>
+  
+</nav>
+  </div>
 
-     <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post1 image.jpg">  mathrubhumidotcom  <i class="fas fa-check-circle"></i></h5>
-          </div>
-         <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-        
-        </div>
-          
-          <video class="postvideo" controls>
-            <source src="img/post6.mp4" type="video/mp4">
-            </video>
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-    
-       <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post7 image.jpg">  sunmusic_offl   <i class="fas fa-check-circle"></i></h5>
-         </div>
-        
-        <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-        
-        </div>
-         
-          <video class="postvideo" controls>
-            <source src="img/post7.mp4" type="video/mp4"></video>
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-    
-       <div class="card">
 
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post8 image.jpg">  trollmovies  <i class="fas fa-check-circle"></i></h5>
-          </div> 
-          <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-          </div>
-          <img src="img/post8.jpg" class="img-fluid postimage" alt="image">
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-    
-       <div class="card">
-        <div class="card-body">
 
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post9 image.jpg">  juventus  <i class="fas fa-check-circle"></i></h5>
-          </div>
-          <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-        
-        
-        </div>
-          <video class="postvideo" controls>
-            <source src="img/post9.mp4" type="video/mp4"></video>
-          <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-        </div>
-      </div>
-    
-       <div class="card">
-        <div class="card-body">
-          <div class="a">
-            <div class="post">
-          <h5><img src="img/post8 image.jpg">  trollmovies  <i class="fas fa-check-circle"></i></h5>
-           </div>
-          <div class="dot">
-          <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
-          </div>
-           </div>
-          <img src="img/post10.jpg" class="img-fluid postimage" alt="image">
-        <i class='far fa-heart like'></i>
-          <i class='far fa-comment comment'></i>
-          <i class='fas fa-paper-plane Message'></i>
-          
-          </div>
-      </div>
-    
 
+
+<div class="col-sm-12 navbottom">
+  <nav class="navbar navbar-expand-sm  fixed-bottom subnavbottom">
+  <div class="container-fluid">
+
+
+
+    <a class="navbar-brand" href="#"><i class="fas fa-home bottomhome "></i>
+    <a class="navbar-brand" href="#"><i class="far fa-compass bottombutton"></i>
+        <a class="navbar-brand" href="#"><i class="fas fa-toggle-right bottombutton"></i>
+          <a class="navbar-brand" href="#"><i class="fas fa-plus bottombutton"></i>
+          <a class="navbar-brand" href="#"><i class="fas fa-paper-plane bottombutton"></i>
+            <a class="navbar-brand" href="#"><img src="img/mjpt.jpg" class="imgjaseer">
     </div>
+</nav>
+  </div>
 
-    <!-- RIGHT SIDEBAR -->
-    <div class="col-md-2 col-lg-2 d-none d-md-block ">
-      <div class="sidebar p-3 border-start">
-        <h5 class="mb-3"></h5>
-        <p>Contacts</p>
-        <p>Contact 1</p>
-        <p>Contact 2</p>
-        <p>Contact 3</p>
-        <p>Contact 4</p>
-        <p>Contact 5</p>
-        <p>Contact 6</p>
-        <p>Contact 7</p>
-        <p>Contact 8</p>
-        <p>Contact 9</p>
-        <p>Contact 10</p>
-      </div>
-    </div>
 
   </div>
-</div>
+
+
+
+
+              
 
 </body>
+
 </html>
