@@ -474,22 +474,23 @@ background-color: rgba(136, 126, 126, 0.46);
 border: none;
 
 }
-.navsearchicon{
+ .navsearchicon{
   color: gray;
   position: absolute;
   margin-left:168px;
   margin-top: -36px;
   padding: 15px;
   font-size: 15px;
-}
+} 
 .mainsearch{
 display: flex;
 }
 
 .navlike{
   color: white;
-  margin-top: -40px;
+  margin-top: -30px;
   font-size: 28px;
+  padding-left: 12px;
   cursor: pointer;
 }
 
@@ -1022,11 +1023,11 @@ display: flex;
     <i class="fas fa-search navsearchicon "></i>
       <form class="d-flex navsearch">
         <input class="form-control  navsearchbox" type="text" placeholder="Search">
-        
+        <span class="navlike" data-bs-toggle="tooltip" title="Notification"><i class='far fa-heart'></i></span>
+  
       </form>
 
-      <span class="navlike" data-bs-toggle="tooltip" title="Notification"><i class='far fa-heart'></i></span>
-  </div>
+      </div>
   
 </nav>
   </div>
