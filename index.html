@@ -120,13 +120,21 @@
     }
 
     .instastory {
+
+      margin: auto;
+      width: 100%;
+
       display: flex;
+      justify-content: space-between;
+
+
     }
 
     .instastory>.image>img {
       border: 4px solid rgb(221, 19, 187);
-      margin-left: 9px;
       cursor: pointer;
+
+
     }
 
     .instastory>.image>h3 {
@@ -139,23 +147,20 @@
     .like {
       font-size: 25px;
       color: white;
-      margin-top: 18px;
-      padding-left: 10px;
+      padding: 14px;
     }
 
     .Message {
       font-size: 20px;
       color: white;
-      margin-top: 18px;
-      padding-left: 3px;
+      padding: 10px;
     }
 
     .comment {
 
       font-size: 25px;
       color: white;
-      margin-top: 18px;
-      padding-left: 3px;
+      padding: 10px;
     }
 
     .card>.card-body>i:hover {
@@ -193,24 +198,34 @@
 
     @media only screen and (max-width: 600px) {
       .instastory>.image>img {
-        height: 60px;
-        border-radius: 35px;
-        margin-top: 70px;
+        display: none;
+
 
       }
     }
 
     @media only screen and (min-width: 600px) {
       .instastory>.image>img {
-        height: 65px;
-        border-radius: 40px;
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .instastory>.image>h3 {
+        display: none;
+
+
       }
     }
 
     @media only screen and (min-width: 992px) {
       .instastory>.image>img {
         height: 90px;
-        border-radius: 45px;
+        border-radius: 50px;
+        padding: 5px;
+        display: block;
+
+
       }
     }
 
@@ -223,7 +238,7 @@
     .dot>h6 {
       font-size: 25px;
       padding: 5px;
-      margin-top: -15px;
+
       border-radius: 15px;
       cursor: pointer;
     }
@@ -241,8 +256,7 @@
 
     .button {
       color: blue;
-      margin-left: 7.5rem;
-      margin-top: 10px;
+      padding: 5px;
       cursor: pointer;
       font-size: 13px;
     }
@@ -434,102 +448,197 @@
       color: gray;
     }
 
-   @media only screen and (min-width: 992px) {
-    .navbar{
-      display:none;
+    .navbottom {
+      background-color: #000;
+      border: 2px solid rgba(30, 27, 27, 0.358);
+
     }
-   }
-   @media only screen and (min-width: 768px) {
-    .navbar{
-      display:none;
+
+    .subnavbottom {
+      background-color: #000;
+      margin: auto;
+      width: 100%;
+      padding: 13px;
+      display: flex;
     }
-   }
-.navbar{
-  border: 1px solid  rgba(15, 12, 12, 0.551);;
- background-color:rgba(0, 0, 0, 0.945); ;
-}
-   
-.navinsta > a > h5{
-  font-size: 35px;
+
+    .bottombutton {
+      color: white;
+    }
+
+    .bottomhome {
+      color: white;
+    }
+
+    @media only screen and (min-width: 992px) {
+      .navbottom {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .navbottom {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .navtop {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .navtop {
+        display: none;
+        border: 2px solid rgba(30, 27, 27, 0.358);
+        background-color: #000;
+      }
+    }
+
+    .topinsta>.a {
+      font-size: 35px;
       font-family: "Brush Script MT", cursive;
       color: white;
-      
-}
-.navinsta{
-  height: 40px;
-}
-.navsearch{
-  margin-top: -12px;
-  
-  
-}
-.navsearchbox{
-  border-radius: 25px;
-  margin-left: 165px;
-  margin-top: -25px;
-  padding-left: 40px;
-background-color: rgba(136, 126, 126, 0.46);
- cursor: pointer;
 
-border: none;
-
-}
- .navsearchicon{
-  color: gray;
-  position: absolute;
-  margin-left:168px;
-  margin-top: -36px;
-  padding: 15px;
-  font-size: 15px;
-} 
-.mainsearch{
-display: flex;
-}
-
-.navlike{
-  color: white;
-  margin-top: -30px;
-  font-size: 28px;
-  padding-left: 12px;
-  cursor: pointer;
-}
-
- @media only screen and (min-width: 992px) {
-    .navbottom{
-      display:none;
     }
-   }
-@media only screen and (min-width: 768px) {
-    .navbottom{
-      display:none;
-    }
-   }
-   .navbottom{
-    background-color: rgba(62, 57, 57, 0.551);
- border: 2px solid rgba(30, 27, 27, 0.358);;
 
-   }
-   .subnavbottom{
-    height: 60px;
-    
-   }
-   .bottomhome{
-    margin-left: 18px;
-    color: white;
-   }
-   .bottombutton{
-    color: white;
-   }
+    .topinsta {
+      margin: auto;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+
+    }
+
+    .navtop2 {
+      border: 2px solid rgba(30, 27, 27, 0.358);
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .searchbox {
+      background-color: rgba(128, 128, 128, 0.675);
+      border-radius: 20px;
+      border: none;
+
+    }
+
+    @media only screen and (min-width: 992px) {
+      .instastory2>.image>img {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .instastory2>.image>h3 {
+        display: none;
+      }
+    }
+
+    .instastory2 {
+      margin: auto;
+      width: 100%;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .instastory2>.image>img {
+      height: 85px;
+      border-radius: 50px;
+      padding: 5px;
+      margin-top: 60px;
+      border: 4px solid rgb(221, 19, 187);
+      cursor: pointer;
+
+
+    }
+
+    .instastory2>.image>h3 {
+      color: white;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .card-body>.a {
+      margin: auto;
+      width: 100%;
+      padding: 5px;
+      display: flex;
+    }
+
+    .topinsta>.toplike {
+      color: white;
+
+    }
+
+    .card-body>.a>.post {
+      margin: auto;
+      width: 100%;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 </head>
 
 <body>
 
+
+
+
+  <div class="navtop mb-4">
+    <nav class="navbar navbar-expand-sm  fixed-top navtop2">
+      <div class="container-fluid topinsta">
+        <a class="navbar-brand a" href="#">Instagram</a>
+        <a class="navbar-brand b" href="#"><input class="form-control searchbox " type="text" placeholder="Search"></a>
+        <a class="navbar-brand toplike" href="#"><i class='far fa-heart '></i></a>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+  <div class="instastory2 ">
+
+    <div class=" image ">
+      <img src="img/mjpt.jpg">
+      <h3>m__j_pt</h3>
+    </div>
+    <div class="image">
+      <img src="img/ajsal.jpg">
+      <h3>ajsal.05</h3>
+    </div>
+    <div class="image">
+      <img src="img/murshid.jpg">
+      <h3>_murshid...</h3>
+    </div>
+    <div class="image">
+      <img src="img/muhsi.jpg">
+      <h3>3_xhi_i_</h3>
+    </div>
+    <div class="image">
+      <img src="img/miluleo.jpg">
+      <h3>millu_leo</h3>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <div class="container-fluid">
     <div class="row">
 
       <!-- LEFT SIDEBAR -->
-      <div class="col-md-2  col-lg-2 d-none d-md-block">
+      <div class="col-md-2  col-lg-2 d-none d-md-block ">
         <div class="sidebar p-3">
           <h5 class="mb-3 mt-2 ">Instagram</h5>
 
@@ -548,7 +657,7 @@ display: flex;
           <p> <i class='far fa-heart'></i>
             Notifications</p>
           <p> <i class="fas fa-plus"></i> Create</p>
-          <p><img src="img/jaseer.jpg" class="imgjaseer"><span class="profile"> Profile</span></p>
+          <p><img src="img/mjpt.jpg" class="imgjaseer"><span class="profile"> Profile</span></p>
           <br><br><br><br>
           <p><i class="fa fa-bars"></i> More</p><br>
           <p><i class="fa fa-th-large"></i> Also from meta</p>
@@ -557,10 +666,10 @@ display: flex;
       </div>
 
       <!-- CENTER FEED -->
-
+      <!-- <br /> -->
       <div class="col-md-8 col-lg-7 col-sm-12 feed ">
-        <div class="mb-4 instastory">
-          <div class="image">
+        <div class="  instastory">
+          <div class=" image">
             <img src="img/mjpt.jpg">
             <h3>m__j_pt</h3>
           </div>
@@ -590,10 +699,9 @@ display: flex;
               <div class="post">
 
                 <h5><img src="img/post1 image.jpg"> mathrubhumidotcom <i class="fas fa-check-circle"></i> </h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
             </div>
             <img src="img/post1.jpg" class="img-fluid postimage" alt="image">
             <i class='far fa-heart like'></i>
@@ -609,10 +717,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post2 image.jpg"> Sam_leo.x_.10 </h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
             </div>
 
             <video class="postvideo" controls>
@@ -631,9 +738,6 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post3 image.jpg"> rajishavijayan <i class="fas fa-check-circle"></i></h5>
-              </div>
-
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
             </div>
@@ -655,11 +759,10 @@ display: flex;
 
               <div class="post">
                 <h5><img src="img/post4 image.jpg"> thengakolamedia <i class="fas fa-check-circle"></i></h5>
-              </div>
-
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
+
 
             </div>
 
@@ -681,10 +784,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post5 image.jpg"> nocap.online <i class="fas fa-check-circle"></i></h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
             </div>
 
             <img src="img/post5.jpg" class="img-fluid postimage" alt="image">
@@ -701,10 +803,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post1 image.jpg"> mathrubhumidotcom <i class="fas fa-check-circle"></i></h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
 
             </div>
 
@@ -723,11 +824,10 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post7 image.jpg"> sunmusic_offl <i class="fas fa-check-circle"></i></h5>
-              </div>
-
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
+
 
             </div>
 
@@ -747,10 +847,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post8 image.jpg"> trollmovies <i class="fas fa-check-circle"></i></h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
             </div>
             <img src="img/post8.jpg" class="img-fluid postimage" alt="image">
             <i class='far fa-heart like'></i>
@@ -766,10 +865,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post9 image.jpg"> juventus <i class="fas fa-check-circle"></i></h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
 
 
             </div>
@@ -788,10 +886,9 @@ display: flex;
             <div class="a">
               <div class="post">
                 <h5><img src="img/post8 image.jpg"> trollmovies <i class="fas fa-check-circle"></i></h5>
-              </div>
-              <div class="dot">
                 <h6><span class="dot" data-bs-toggle="tooltip" title="more options">&#8230;</span></h6>
               </div>
+
             </div>
             <img src="img/post10.jpg" class="img-fluid postimage" alt="image">
             <i class='far fa-heart like'></i>
@@ -820,6 +917,11 @@ display: flex;
             <div class="button">
               <b>Switch</b>
             </div>
+
+
+
+
+
           </div>
 
           <div class="c">
@@ -962,7 +1064,7 @@ display: flex;
                   </div>
 
                   <div class="epara">
-                     <p>Followed by murshid +1</p>
+                    <p>Followed by murshid +1</p>
                   </div>
                 </div>
 
@@ -1009,48 +1111,37 @@ display: flex;
       </div>
 
     </div>
-  
-  <div class="col-sm-12  d-lg-block d-md-block navbar">
-  
-<nav class="navbar navbar-expand-sm  fixed-top">
- 
- 
-  <div class="container-fluid navinsta">
-    <a><h5 class="mb-3 ">Instagram</h5></a>
-</div>
-
-    <div class="container-fluid mainsearch">
-    <i class="fas fa-search navsearchicon "></i>
-      <form class="d-flex navsearch">
-        <input class="form-control  navsearchbox" type="text" placeholder="Search">
-        <span class="navlike" data-bs-toggle="tooltip" title="Notification"><i class='far fa-heart'></i></span>
-  
-      </form>
-
-      </div>
-  
-</nav>
-  </div>
 
 
 
 
 
-<div class="col-sm-12 navbottom">
-  <nav class="navbar navbar-expand-sm  fixed-bottom subnavbottom">
-  <div class="container-fluid">
 
 
 
-    <a class="navbar-brand" href="#"><i class="fas fa-home bottomhome "></i>
-    <a class="navbar-brand" href="#"><i class="far fa-compass bottombutton"></i>
-        <a class="navbar-brand" href="#"><i class="fas fa-toggle-right bottombutton"></i>
-          <a class="navbar-brand" href="#"><i class="fas fa-plus bottombutton"></i>
-          <a class="navbar-brand" href="#"><i class="fas fa-paper-plane bottombutton"></i>
-            <a class="navbar-brand" href="#"><img src="img/mjpt.jpg" class="imgjaseer">
+
+
+    <div class="col-sm-12 navbottom">
+      <nav class="navbar navbar-expand-sm  fixed-bottom subnavbottom">
+        <div class="container-fluid">
+
+
+
+          <a class="navbar-brand" href="#"><i class="fas fa-home bottomhome "></i>
+            <a class="navbar-brand" href="#"><i class="far fa-compass bottombutton"></i>
+              <a class="navbar-brand" href="#"><i class="fas fa-toggle-right bottombutton"></i>
+                <a class="navbar-brand" href="#"><i class="fas fa-plus bottombutton"></i>
+                  <a class="navbar-brand" href="#"><i class="fas fa-paper-plane bottombutton"></i>
+                    <a class="navbar-brand" href="#"><img src="img/mjpt.jpg" class="imgjaseer">
+        </div>
+      </nav>
     </div>
-</nav>
-  </div>
+
+
+
+
+
+
 
 
   </div>
@@ -1058,7 +1149,7 @@ display: flex;
 
 
 
-              
+
 
 </body>
 
